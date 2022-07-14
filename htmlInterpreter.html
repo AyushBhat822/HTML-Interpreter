@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<style>
+
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 28px;
+  background: #C0C0C0;
+}
+
+div#d1 {
+text-align: center;
+
+height: 65%;
+margin: 0;
+}
+
+img#d2{
+width: 50%;
+height: 50%;
+}
+
+textarea#d4{
+margin 5%;
+width: 40%;
+height: 40%;
+font-size: 15px;
+background: black;
+color: white;
+
+}
+
+#d5{
+
+font-size: 15px; 
+}
+
+</style>
+
+<script>
+
+function send() 
+{
+live_data = document.getElementById("d4");
+
+display_data = document.getElementById("d5");
+
+display_data.innerHTML = live_data.value;
+
+}
+
+</script>
+
+<body>
+
+<div id="d1">
+<img id="d2" src="goku.jpg" />
+<h2> Live HTML Interpreter </h2>
+<div> Start Coding In Html CSS and JS <div>
+
+<div id="d3">
+<textarea id="d4" onkeyup="send()"></textarea>
+</div>
+
+Ouptut Area<div id="d5"></d5>
+
+</div>
+
+</body>
